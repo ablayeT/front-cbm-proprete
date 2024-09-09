@@ -1,27 +1,28 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React from "react";
+// import { useState, useEffect } from 'react';
+// import axios from "axios";
 
-interface Service {
-  _id: string;
-  name: string;
-  description: string;
-  price: number;
-}
+// interface Service {
+//   _id: string;
+//   name: string;
+//   description: string;
+//   price: number;
+// }
 
 const Services: React.FC = () => {
-  const [services, setServices] = useState<Service[]>([]);
+  //   const [services, setServices] = useState<Service[]>([]);
 
-  useEffect(() => {
-    axios
-      .get("/api/services")
-      .then((response) => setServices(response.data))
-      .catch((error) => console.error(error));
-  }, []);
+  //   useEffect(() => {
+  //     axios
+  //       .get("/api/services")
+  //       .then((response) => setServices(response.data))
+  //       .catch((error) => console.error(error));
+  //   }, []);
 
   return (
     <div>
       <h1>Nos Services</h1>
-      <ul>
+      {/* <ul>
         {services.map((service) => (
           <li key={service._id}>
             <h2>{service.name}</h2>
@@ -29,7 +30,7 @@ const Services: React.FC = () => {
             <p>Prix: {service.price} €</p>
           </li>
         ))}
-      </ul>
+      </ul> */}
     </div>
   );
 };

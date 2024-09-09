@@ -70,14 +70,14 @@ const Contact: React.FC = () => {
     <div>
       <div className="relative sm:mb-0 md:mb-48 lg:mb-48">
         {/* Bloc en haut de la page */}
-        <div className="bg-blue-500 text-white py-8 flex justify-center items-center h-32 relative">
+        <div className="bg-customBlue text-white py-8 flex justify-center items-center h-64 relative">
           <h1 className="text-4xl font-bold  z-10">Contact</h1>
         </div>
 
         {/* CompanyInfoCards au-dessus du formulaire pour les écrans md et plus */}
         <div
           className="absolute w-full flex mb-40 justify-center hidden md:flex"
-          style={{ top: "35%" }}
+          style={{ top: "60%" }}
         >
           <div className="w-4/5 lg:w-3/5">
             <CompanyInfoCards />

@@ -27,14 +27,16 @@ const Header: React.FC = () => {
   }, [isOpen]);
 
   return (
-    <header className="relative flex items-center justify-between p-4 bg-gray-800 text-white">
+    <header className="fixed top-0 left-0 w-full flex items-center justify-between p-5  bg-gray-800 text-white z-50">
       {/* Logo */}
       <div className="flex-shrink-0">
-        <img
-          src={logo}
-          alt="Logo"
-          className="h-full w-16 rounded-md object-contain"
-        />
+        <Link to="/">
+          <img
+            src={logo}
+            alt="Logo"
+            className="h-full w-16 rounded-md object-contain"
+          />
+        </Link>
       </div>
 
       {/* Toggle Button for small screens */}
@@ -61,9 +63,9 @@ const Header: React.FC = () => {
       <div className="lg:hidden absolute left-1/2 transform -translate-x-1/2">
         <a
           href="/get-quote"
-          className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+          className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-customBlue"
         >
-          Obtenir un devis
+          Devis gratuit
         </a>
       </div>
 
@@ -78,7 +80,7 @@ const Header: React.FC = () => {
             <Link
               key={link.path}
               to={link.path}
-              className="block lg:inline-block px-4 py-2 hover:text-gray-400"
+              className="block text-white lg:inline-block px-4 py-2 hover:text-gray-500"
             >
               {link.label}
             </Link>
@@ -90,9 +92,9 @@ const Header: React.FC = () => {
       <div className="hidden lg:block">
         <a
           href="/get-quote"
-          className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+          className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-customBlue"
         >
-          Obtenir un devis
+          Devis gratuit
         </a>
       </div>
     </header>

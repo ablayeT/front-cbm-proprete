@@ -3,7 +3,7 @@ import { FaStar, FaThumbsUp, FaHandshake, FaShieldAlt } from "react-icons/fa";
 
 const WhyChooseUs: React.FC = () => {
   return (
-    <section className="bg-gray-100 py-16">
+    <section className=" bg-customBlue-gradient py-16">
       <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center lg:justify-between gap-8">
         {/* Bloc de gauche avec les cartes */}
         <div className="lg:w-1/2 flex flex-col space-y-6 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-6">

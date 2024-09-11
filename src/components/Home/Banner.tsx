@@ -3,8 +3,8 @@ import bannerImage from "../assets/images/cbmPropretéBureau.jpeg";
 
 const Banner: React.FC = () => {
   return (
-    <div className="bg-gray-100 py-16">
-      <div className="container mx-auto flex flex-col lg:flex-row items-center p-4 justify-between">
+    <div className="bg-gray-100 py-16 bg-custom-gradient ">
+      <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center p-4 justify-between">
         {/* Bloc de gauche */}
         <div className="lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0">
           <h1 className="text-4xl lg:text-5xl font-bold font-inter text-gray-800 mb-4">
@@ -50,11 +50,11 @@ const Banner: React.FC = () => {
         </div>
 
         {/* Bloc de droite avec l'image */}
-        <div className="lg:w-1/2 mt-8 lg:mt-0">
+        <div className="lg:w-1/2  mt-4 lg:mt-0 mb-10">
           <img
             src={bannerImage}
             alt="BannerImg"
-            className="w-full h-auto rounded-lg shadow-lg"
+            className="w-full lg:h-120 rounded-xl  shadow-lg"
           />
         </div>
       </div>

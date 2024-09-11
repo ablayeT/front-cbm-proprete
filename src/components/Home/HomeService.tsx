@@ -3,7 +3,7 @@ import { FaBusinessTime, FaBoxOpen, FaHome, FaBuilding } from "react-icons/fa";
 
 const HomeService: React.FC = () => {
   return (
-    <section className="bg-gray-100 py-16">
+    <section className="bg-gray-100 py-16  ">
       <div className="container mx-auto flex flex-col items-center">
         {/* Titre et sous-titre */}
         <div className="text-center mb-12">
@@ -16,7 +16,7 @@ const HomeService: React.FC = () => {
         {/* Cartes des services */}
         <div className="flex flex-col md:flex-row md:space-x-6">
           {/* Carte 1: Commercial Cleaning */}
-          <div className="bg-white p-6 rounded-lg shadow-lg mb-6 md:mb-0 flex flex-col items-center text-center">
+          <div className="bg-white p-6 justify-center rounded-lg shadow-lg mb-6 md:mb-0 flex h-60 flex-col items-center text-center">
             <FaBusinessTime className="text-4xl text-blue-500 mb-4" />
             <h3 className="text-xl font-semibold mb-4">Nettoyage commercial</h3>
             <button
@@ -41,7 +41,7 @@ const HomeService: React.FC = () => {
           </div>
 
           {/* Carte 2: Move In/Move Out Cleaning */}
-          <div className="bg-white p-6 rounded-lg shadow-lg mb-6 md:mb-0 flex flex-col items-center text-center">
+          <div className="bg-white p-6 justify-center  rounded-lg shadow-lg mb-6 md:mb-0 flex flex-col items-center text-center">
             <FaBoxOpen className="text-4xl text-green-500 mb-4" />
             <h3 className="text-xl font-semibold mb-4">
               Nettoyage d'emménagement/de déménagement
@@ -68,7 +68,7 @@ const HomeService: React.FC = () => {
           </div>
 
           {/* Carte 3: Residential Cleaning */}
-          <div className="bg-white p-6 rounded-lg shadow-lg mb-6 md:mb-0 flex flex-col items-center text-center">
+          <div className="bg-white p-6 justify-center  rounded-lg shadow-lg mb-6 md:mb-0 flex flex-col items-center text-center">
             <FaHome className="text-4xl text-yellow-500 mb-4" />
             <h3 className="text-xl font-semibold mb-4">
               Nettoyage résidentiel
@@ -95,7 +95,7 @@ const HomeService: React.FC = () => {
           </div>
 
           {/* Carte 4: Apartment Cleaning */}
-          <div className="bg-white p-6 rounded-lg shadow-lg mb-6 md:mb-0 flex flex-col items-center text-center">
+          <div className="bg-white p-6 justify-center  rounded-lg shadow-lg mb-6 md:mb-0 flex flex-col items-center text-center">
             <FaBuilding className="text-4xl text-red-500 mb-4" />
             <h3 className="text-xl font-semibold mb-4">
               Nettoyage d'appartement

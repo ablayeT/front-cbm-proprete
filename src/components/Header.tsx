@@ -10,7 +10,7 @@ const Header: React.FC = () => {
     setIsOpen(!isOpen);
   };
 
-  // Ferme le menu si on clique à l'extérieur
+  // Fermer le menu si on clique à l'extérieur
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       const target = event.target as HTMLElement;
@@ -27,19 +27,21 @@ const Header: React.FC = () => {
   }, [isOpen]);
 
   return (
-    <header className="fixed top-0 left-0 w-full flex items-center justify-between p-5  bg-gray-800 text-white z-50">
+    <header className="fixed top-0 left-0 w-full flex items-center justify-between pl-6 pr-6 bg-gray-800 text-white z-50">
       {/* Logo */}
-      <div className="flex-shrink-0">
+      <div className="flex-shrink-0 mr-4">
+        {" "}
+        {/* Ajout de 'mr-4' pour un espace à droite */}
         <Link to="/">
           <img
             src={logo}
             alt="Logo"
-            className="h-full w-16 rounded-md object-contain"
+            className="h-16 w-16 lg:h-20 lg:w-20 rounded-xl object-contain"
           />
         </Link>
       </div>
 
-      {/* Toggle Button for small screens */}
+      {/* Bouton Toggle pour les petits écran */}
       <div className="block lg:hidden">
         <button onClick={toggleMenu} className="text-white focus:outline-none">
           <svg
@@ -59,7 +61,7 @@ const Header: React.FC = () => {
         </button>
       </div>
 
-      {/* CTA Button for small screens */}
+      {/* CTA Button pour les petits écran */}
       <div className="lg:hidden absolute left-1/2 transform -translate-x-1/2">
         <a
           href="/get-quote"
@@ -69,7 +71,7 @@ const Header: React.FC = () => {
         </a>
       </div>
 
-      {/* Navigation Links */}
+      {/* Liens de navigation*/}
       <nav
         className={`${
           isOpen ? "block" : "hidden"

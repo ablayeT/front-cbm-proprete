@@ -17,6 +17,9 @@ module.exports = {
         customTextColor: "rgb(137, 188, 43)",
         customGray: "rgb(31, 41, 55)",
       },
+      fontFamily: {
+        nunito: ["nunito sans ", "sans-serif"],
+      },
     },
   },
   plugins: [],

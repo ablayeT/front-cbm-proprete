@@ -2,7 +2,7 @@ import React from "react";
 
 const About: React.FC = () => {
   return (
-    <div>
+    <div className=" bg-custom-gradient ">
       <h1>À propos de nous</h1>
       <p>
         Nom de votre entreprise de nettoyage est une société spécialisée dans...
